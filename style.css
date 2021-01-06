@@ -1,0 +1,72 @@
+* {
+    margin: 0; 
+    padding: 0;
+    outline: 0;
+    border: 0;
+    border-spacing: 0;
+    box-sizing: border-box;
+}
+
+table {
+  margin: 30px auto;
+  border: 2px solid rgb(59, 10, 10);
+}
+
+input {
+   background-color: rgb(239, 244, 245);
+   -webkit-appearance: textfield;  /* Quita las flechas del selector en Firefox */
+   width: 50px;
+   height: 50px;
+   font-size: 6vh;
+   text-align: center;
+   margin: 0;
+}
+
+/* Quitar las flechas del selector en Chrome, Safari */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* La clase invalida se crea al introducir números dobles (Ver sudoku.js) */
+input:invalid, .invalida {
+    border: 1px solid red;
+    background-color: rgb(240, 96, 96);
+}
+
+
+/* Filas y columnas */
+tr {
+    border-bottom: 1px solid rgb(146, 134, 134);
+    display: block;
+    
+}
+
+tr:nth-child(3), tr:nth-child(6) {
+    border-bottom: 2px solid black;
+}
+
+td {
+    border-right: 1px solid rgb(146, 134, 134);
+}
+
+td:nth-child(3), td:nth-child(6) {
+    border-right: 2px solid black;
+}
+
+/* Fin filas y columnas */
+
+
+.check {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+

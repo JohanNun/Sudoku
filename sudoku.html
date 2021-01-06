@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <table>
+
+        <tbody>
+            <tr>
+                <!-- Cada linea con sus 9 columnas se repite 9 veces (9x9) -->
+                <td><input type="number" min="1" max="9" step="1" id="celula0-0"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula0-1"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula0-2"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula0-3"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula0-4"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula0-5"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula0-6"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula0-7"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula0-8"></td>
+            </tr>
+
+            <tr>
+                <td><input type="number" min="1" max="9" step="1" id="celula1-0"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula1-1"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula1-2"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula1-3"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula1-4"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula1-5"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula1-6"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula1-7"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula1-8"></td>
+            </tr>
+
+            <tr>
+                <td><input type="number" min="1" max="9" step="1" id="celula2-0"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula2-1"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula2-2"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula2-3"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula2-4"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula2-5"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula2-6"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula2-7"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula2-8"></td>
+            </tr>
+
+            <tr>
+                <td><input type="number" min="1" max="9" step="1" id="celula3-0"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula3-1"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula3-2"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula3-3"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula3-4"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula3-5"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula3-6"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula3-7"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula3-8"></td>
+            </tr>
+
+            <tr>
+                <td><input type="number" min="1" max="9" step="1" id="celula4-0"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula4-1"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula4-2"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula4-3"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula4-4"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula4-5"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula4-6"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula4-7"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula4-8"></td>
+            </tr>
+
+            <tr>
+                <td><input type="number" min="1" max="9" step="1" id="celula5-0"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula5-1"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula5-2"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula5-3"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula5-4"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula5-5"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula5-6"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula5-7"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula5-8"></td>
+            </tr>
+
+            <tr>
+                <td><input type="number" min="1" max="9" step="1" id="celula6-0"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula6-1"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula6-2"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula6-3"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula6-4"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula6-5"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula6-6"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula6-7"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula6-8"></td>
+            </tr>
+
+            <tr>
+                <td><input type="number" min="1" max="9" step="1" id="celula7-0"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula7-1"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula7-2"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula7-3"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula7-4"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula7-5"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula7-6"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula7-7"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula7-8"></td>
+            </tr>
+
+            <tr>
+                <td><input type="number" min="1" max="9" step="1" id="celula8-0"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula8-1"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula8-2"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula8-3"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula8-4"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula8-5"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula8-6"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula8-7"></td>
+                <td><input type="number" min="1" max="9" step="1" id="celula8-8"></td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <button class="check"> Check</button>
+
+
+
+
+    <script src="sudoku.js"></script>
+</body>
+
+</html>
