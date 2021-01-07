@@ -34,7 +34,7 @@ const importarInfo = async () => {
             const valor = cuadrillo[row][col];
 
             //Por cada campo, si hay un valor, hacer el campo no modificable.
-            if (valor !== null) {
+            if (valor !== 'null') {
 
                 const identificador = 'celula' + row + '-' + col;
                 const inputCuadro = document.getElementById(identificador)
